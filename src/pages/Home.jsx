@@ -26,8 +26,6 @@ class Home extends Component {
             }}
           />
         )} */}
-        {/* Navigatin Bar with Login and signUp button */}
-        {/* Footer */}
       </>
     );
   }
