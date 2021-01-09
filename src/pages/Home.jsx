@@ -4,13 +4,8 @@ import Cookies from "js-cookies";
 import "../styles/home.module.css";
 
 class Home extends Component {
-  // Will hold state for current User
-  // Will Make an api call to server
-  // Check for the token from the Cookies
   state = {
     isAuthenticated: Cookies.getItem("jwt") ? true : false,
-    blogData: {},
-    some: "",
   };
 
   render() {
