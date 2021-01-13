@@ -1,3 +1,67 @@
+# User Authentication using reactJs
+
+This project provides login and signup functionality. This project make use of a [nodeJs server](https://user-authentication-mongo.herokuapp.com) hosted on [Heroku](https://heroku.com).
+
+This makes use of [react routing](https://reactrouter.com/web/guides/quick-start)
+
+End points:
+
+```
+/
+```
+
+Renders Home page which will be rendered once the user has login.
+
+```
+/login
+```
+
+Will render Login Page
+
+```
+/signup
+```
+
+Will render Sign Up Page
+
+## Downloadig and running Project
+
+1. Clone the repository, Open terminal and run
+
+```
+git clone https://github.com/AdityaRawEngg/user-authentication-react.git
+```
+
+2. After downloading finish go to the project directory
+
+```
+cd user-authentication-react
+```
+
+3. Then run
+
+```
+npm install
+```
+
+This will install all dependencies of project 4. To run project
+
+```
+npm run start
+```
+
+To create a build file
+
+```
+npm run build
+```
+
+# Live demo
+
+This App is hosted in [Vercel](https://vercel.com)
+
+[Link](https://blog-rendring-react.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
