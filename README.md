@@ -60,7 +60,7 @@ npm run build
 
 This App is hosted in [Vercel](https://vercel.com)
 
-[Link](https://blog-rendring-react.vercel.app/)
+[Link](https://user-authentication-react.vercel.app/)
 
 # Getting Started with Create React App
 
