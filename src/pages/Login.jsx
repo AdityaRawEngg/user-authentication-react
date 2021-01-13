@@ -40,7 +40,8 @@ class Login extends Component {
       email: event.target.email.value.trim(),
       password: event.target.password.value.trim(),
     };
-    fetch("http://localhost:5000/users/login", {
+
+    fetch("https://user-authentication-mongo.herokuapp.com/users/login", {
       method: "post",
       headers: {
         "Content-Type": "Application/json",
@@ -63,9 +64,10 @@ class Login extends Component {
       })
       .catch((err) => {
         console.log("Error", err);
+        return err;
       });
   };
-  // On Sign Up Button Click
+
   signUp = () => {
     this.props.history.push("/signup");
   };
