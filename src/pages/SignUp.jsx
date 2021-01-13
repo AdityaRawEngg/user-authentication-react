@@ -1,5 +1,6 @@
 import { Component } from "react";
 import styles from "../styles/signup.module.css";
+import { BASE_URL } from "../contants/url";
 
 class SignUp extends Component {
   state = {
@@ -57,7 +58,7 @@ class SignUp extends Component {
       password: event.target.password.value.trim(),
       cpassword: event.target.cpassword.value.trim(),
     };
-    fetch("https://user-authentication-mongo.herokuapp.com/users/signin", {
+    fetch(`${BASE_URL}/users/signin`, {
       method: "post",
       headers: {
         "Content-Type": "Application/json",

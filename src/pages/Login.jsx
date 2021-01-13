@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Cookies from "js-cookies";
 import styles from "../styles/login.module.css";
+import { BASE_URL } from "../contants/url";
 
 class Login extends Component {
   state = {
@@ -41,7 +42,7 @@ class Login extends Component {
       password: event.target.password.value.trim(),
     };
 
-    fetch("https://user-authentication-mongo.herokuapp.com/users/login", {
+    fetch(`${BASE_URL}/users/login`, {
       method: "post",
       headers: {
         "Content-Type": "Application/json",
