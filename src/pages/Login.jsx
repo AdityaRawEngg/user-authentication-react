@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Cookies from "js-cookies";
 import styles from "../styles/login.module.css";
-import { BASE_URL } from "../contants/url";
+import { BASE_URL } from "../constants/url";
 
 class Login extends Component {
   state = {

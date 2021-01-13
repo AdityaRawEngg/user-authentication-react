@@ -1,6 +1,6 @@
 import { Component } from "react";
 import styles from "../styles/signup.module.css";
-import { BASE_URL } from "../contants/url";
+import { BASE_URL } from "../constants/url";
 
 class SignUp extends Component {
   state = {
@@ -81,7 +81,6 @@ class SignUp extends Component {
           this.setState({ alertMessage: "" });
           this.props.history.push("/login");
         }, 3000);
-        console.log(data);
       })
       .catch((err) => {
         console.log("Error", err);
