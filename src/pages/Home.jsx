@@ -11,21 +11,21 @@ class Home extends Component {
   render() {
     return (
       <>
-        {/* {this.state.isAuthenticated ? ( */}
-        <div>
-          <iframe
-            src="https://team5-employee-details.netlify.app/"
-            title="Iframe Example"
-            scrolling="no"
-          ></iframe>
-        </div>
-        {/* ) : ( */}
-        {/* <Redirect
+        {this.state.isAuthenticated ? (
+          <div>
+            <iframe
+              src="https://team5-employee-details.netlify.app/"
+              title="Iframe Example"
+              scrolling="no"
+            ></iframe>
+          </div>
+        ) : (
+          <Redirect
             to={{
               pathname: "/login",
             }}
           />
-        )} */}
+        )}
       </>
     );
   }
