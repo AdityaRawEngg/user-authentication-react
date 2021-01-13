@@ -57,7 +57,7 @@ class SignUp extends Component {
       password: event.target.password.value.trim(),
       cpassword: event.target.cpassword.value.trim(),
     };
-    fetch("http://localhost:5000/users//signin", {
+    fetch("https://user-authentication-mongo.herokuapp.com/users/signin", {
       method: "post",
       headers: {
         "Content-Type": "Application/json",
